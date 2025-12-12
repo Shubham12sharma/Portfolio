@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
+import './Certificate.css';
 
 import cert1 from '../../assets/cert1.jpeg';
 import cert2 from '../../assets/cert2.jpeg';

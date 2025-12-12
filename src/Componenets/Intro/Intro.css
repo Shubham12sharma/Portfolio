@@ -5,7 +5,7 @@
   background-color: rgb(30, 30, 30);
   color: #fff;
   min-height: 100vh;
-  padding: 0 8%;
+  padding: 0 ;
   position: relative;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
@@ -226,61 +226,64 @@
 }
 @media (max-width: 375px) {
   #intro {
-    flex-direction: column-reverse;   
+    flex-direction: column-reverse;
     text-align: center;
     padding: 0;
     margin: 0;
     position: relative;
-    max-height: auto !important;
+    min-height: auto !important;
   }
 
   .bg {
     position: relative;
     width: 100%;
-    
-    opacity: 0.6;            
-    
+    margin: 0;
+    opacity: 0.6;
+
     z-index: 1;
   }
 
   .introcontent {
-    position: absolute;     
+    position: absolute;
     top: 60%;
     left: 50%;
-    
+
     transform: translate(-50%, -50%);
-    z-index: 3;               
+    z-index: 3;
     max-width: 90%;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
   }
 
   .introSec {
     font-size: 20px;
   }
-.hello{
-  font-size: 20px;
-}
+
+  .hello {
+    font-size: 20px;
+  }
+
   .introcontent p {
     font-size: 10px;
   }
-.introbtn {
-  margin-top: 20px;
-  background: linear-gradient(90deg, #f2f1ed, #ead4c3);
-  color: #1e1e1e;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 30px;
-  font-size: 20px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.introbtn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(90deg, #f9f9f8, #f6e8c7);
-  
-}
+  .introbtn {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #f2f1ed, #ead4c3);
+    color: #1e1e1e;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .introbtn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #f9f9f8, #f6e8c7);
+
+  }
 }
 @media (max-width: 320px) {
   #intro {
@@ -339,4 +342,66 @@
   background: linear-gradient(90deg, #f9f9f8, #f6e8c7);
   
 }
+}
+
+@media (max-width: 425px) {
+  #intro {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: auto !important;
+  }
+
+  .bg {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    opacity: 0.6;
+
+    z-index: 1;
+  }
+
+  .introcontent {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .introSec {
+    font-size: 20px;
+  }
+
+  .hello {
+    font-size: 20px;
+  }
+
+  .introcontent p {
+    font-size: 10px;
+  }
+
+  .introbtn {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #f2f1ed, #ead4c3);
+    color: #1e1e1e;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .introbtn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #f9f9f8, #f6e8c7);
+
+  }
 }

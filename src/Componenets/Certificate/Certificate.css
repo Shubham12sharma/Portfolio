@@ -2,8 +2,9 @@
   padding: 60px 20px;
   background: rgb(30, 30, 30);
   color: white;
-  min-height: 100vh;
+  
   text-align: center;
+  
 }
 
 .certificate-title {
@@ -176,7 +177,7 @@
 @media (max-width: 480px) {
   .certificate-card {
     width: 220px;
-    height: 160px;
+    
   }
 
   .certificate-title {

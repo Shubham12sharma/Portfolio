@@ -1,0 +1,155 @@
+.certificate-section {
+  padding: 60px 20px;
+  background: rgb(30, 30, 30);
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.certificate-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: white;
+ 
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 30px;
+  animation: scroll 18s linear infinite;
+  width: max-content;
+  padding: 20px 0;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.certificate-card {
+  width: 320px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(100, 120, 255, 0.4);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Scroll Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Modal */
+.cert-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.cert-modal-content {
+  background: #737374;
+  border-radius: 20px;
+  padding: 25px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  animation: slideUp .3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cert-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #333333, #29292a);
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.cert-close-btn:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.cert-modal-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cert-modal-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px) {
+  .certificate-card {
+    width: 250px;
+    height: 200px;
+  }
+
+  .certificate-title {
+    font-size: 2rem;
+  }
+}

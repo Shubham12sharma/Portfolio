@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import { FaGithub } from 'react-icons/fa'; // Import GitHub icon
+import { FaGithub } from 'react-icons/fa'; 
 import img from '../../assets/image.png';
 import todo from '../../assets/todo.png';
 import face from '../../assets/facereco.jpg';
@@ -13,24 +13,24 @@ function Projects() {
       description: "A personal portfolio built with React showcasing skills and projects.",
       image: img, 
       technologies: ["React", "CSS", "JavaScript"],
-      link: "https://your-portfolio-link.com",
-      github: "https://github.com/your-username/portfolio"
+      link: "https://shubhamportfolio-main.netlify.app/",
+      github: "https://github.com/Shubham12sharma/Portfolio"
     },
     {
       title: "Assign Alert",
-      description: "A weather forecasting app using OpenWeather API.",
+      description: "AI-Powered Corporate Task, Sprint & Community Management System.",
       image: todo,
-      technologies: ["React", "API", "PHP","SQL"],
-      link: "https://your-weather-app-link.com",
-      github: "https://github.com/your-username/assign-alert"
+      technologies: ["React", "API", "Django","MongoDB"],
+      link: "#",
+      github: "https://github.com/Shubham12sharma/Assign-Alert"
     },
     {
       title: "Face Recognition Attendance System",
       description: "An app that recognizes valid identity of students and takes attendance automatically.",
       image: face,
       technologies: ['Python','Machine Learning',"SQL"],
-      link: "https://your-todo-app-link.com",
-      github: "https://github.com/your-username/face-recognition-attendance"
+      link: "#",
+      github: "https://github.com/Shubham12sharma136/Face-Reco-system"
     }
   ];
 

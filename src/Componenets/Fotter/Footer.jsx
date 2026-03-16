@@ -14,9 +14,7 @@ function Footer() {
           <a href="https://github.com/Shubham12sharma" target="_blank" rel="noopener noreferrer" className="icon">
             <FaGithub />
           </a>
-          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer"   className="icon" >
-            <FaTwitter />
-          </a>
+        
         </div>
       </div>
     </footer>

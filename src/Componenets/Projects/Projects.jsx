@@ -21,7 +21,7 @@ function Projects() {
       description: "AI-Powered Corporate Task, Sprint & Community Management System.",
       image: todo,
       technologies: ["React", "API", "Django","MongoDB"],
-      link: "#",
+      link: "https://assign-alert1.onrender.com/",
       github: "https://github.com/Shubham12sharma/Assign-Alert"
     },
     {
